@@ -1,0 +1,22 @@
+<!--register.html-->
+
+<!--Embed the header.html template at this location-->
+{{ template "header.html" .}}
+
+<h1>Register</h1>
+
+<form  action="/register-successful" method="POST">
+        <label >Name</label>
+        <input type="text" id="Name" name="Name" placeholder="Name">
+      </div>
+      <br><br> 
+        <label >Password</label>
+        <input type="text" id="Password" name="Password" placeholder="Password">
+      </div> <br><br>
+      <button type="submit">Submit</button>
+    </form>  
+</body>
+</html>    
+    
+<!--Embed the footer.html template at this location-->
+{{ template "footer.html" .}}
