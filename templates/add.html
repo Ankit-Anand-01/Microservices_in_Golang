@@ -1,0 +1,21 @@
+{{ template "header.html" .}}
+<h1>Add Boook Detail</h1>
+
+    <form  action="/adds" method="POST">
+        <label >Book</label>
+        <input type="text" id="Book" name="Book" placeholder="Book">
+      </div>
+      <br><br> 
+        <label >Author</label>
+        <input type="text" id="Author" name="Author" placeholder="Author">
+      </div> <br><br>
+      <label >Genre</label>
+        <input type="text" id="Genre" name="Genre" placeholder="Genre">
+      </div> <br><br>
+      <button type="submit">Add Book</button>
+    </form>  
+
+
+</body>
+</html>
+{{ template "footer.html" .}}
