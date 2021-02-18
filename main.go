@@ -116,10 +116,6 @@ func main() {
 		c.HTML(http.StatusOK, "fantasy.html", gin.H{"books": book3})
 	})
 
-	r.GET("/add", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "add.html", nil)
-	})
-
 	r.POST("/adds", func(c *gin.Context) {
 		Book := c.PostForm("Book")
 		Author := c.PostForm("Author")
